@@ -110,6 +110,12 @@
                     </div>
                 </div>
 
+                <!-- Total Price -->
+                <div id="total-price-container" class="hidden pt-2">
+                    <span class="block text-sm font-medium text-gray-700 mb-1">Total Harga:</span>
+                    <span id="total-price" class="text-lg font-semibold text-gray-800"></span>
+                </div>
+
                 <!-- Submit Button -->
                 <div class="pt-2">
                     <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-medium py-2.5 px-4 rounded-md transition-colors duration-300 flex items-center justify-center gap-2">
@@ -265,6 +271,39 @@
 
       // Open WhatsApp with the message
       window.open(`https://wa.me/628123456789?text=${encodedMessage}`, '_blank');
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const addonsCheckboxes = document.querySelectorAll('input[name="addons"]');
+    const totalPriceContainer = document.getElementById('total-price-container');
+    const totalPriceElement = document.getElementById('total-price');
+
+    // Prices for each addon
+    const addonPrices = {
+        'Transportasi': 500000,
+        'Fotografer': 1000000,
+        'Guide': 750000,
+        'Kuliner': 1500000
+    };
+
+    // Update total price when checkboxes are toggled
+    addonsCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+            let total = 0;
+            addonsCheckboxes.forEach(cb => {
+                if (cb.checked) {
+                    total += addonPrices[cb.value] || 0;
+                }
+            });
+
+            if (total > 0) {
+                totalPriceContainer.classList.remove('hidden');
+                totalPriceElement.textContent = `Rp ${total.toLocaleString('id-ID')}`;
+            } else {
+                totalPriceContainer.classList.add('hidden');
+            }
+        });
     });
   });
 </script>
