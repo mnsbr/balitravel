@@ -352,6 +352,12 @@
 
   document.addEventListener('DOMContentLoaded', () => {
     const addonsCheckboxes = document.querySelectorAll('input[name="addons"]');
+
+    // Reset all checkboxes to unchecked state on page load
+    addonsCheckboxes.forEach(checkbox => {
+        checkbox.checked = false;
+    });
+
     const totalPriceContainer = document.getElementById('total-price-container');
     const totalPriceElement = document.getElementById('total-price');
 
