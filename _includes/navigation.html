@@ -1,17 +1,17 @@
-<nav id="navbar" class="bg-white bg-opacity-70 shadow-md p-4 fixed w-full top-0 z-50 transition-transform duration-300">
+<nav id="navbar" class="bg-transparent p-4 fixed w-full top-0 z-50 transition-all duration-300">
   <div class="container mx-auto flex justify-between items-center">
     <!-- Logo -->
-    <a href="/" class="text-gray-800 text-xl font-bold font-lora">Bali Moments</a>
+    <a href="/" class="text-white text-xl font-bold font-lora drop-shadow-lg text-shadow-md">Bali Moments</a>
 
     <!-- Navigation Links -->
-    <div class="hidden md:flex space-x-4">
-      <a href="/" class="text-gray-600 hover:text-gray-800">Home</a>
-      <a href="/about.html" class="text-gray-600 hover:text-gray-800">About</a>
-      <a href="/contact.html" class="text-gray-600 hover:text-gray-800">Contact</a>
+    <div class="hidden md:flex space-x-6">
+      <a href="/" class="text-white hover:text-gray-200 transition-colors font-semibold drop-shadow-md text-shadow-sm">Home</a>
+      <a href="/about.html" class="text-white hover:text-gray-200 transition-colors font-semibold drop-shadow-md text-shadow-sm">About</a>
+      <a href="/contact.html" class="text-white hover:text-gray-200 transition-colors font-semibold drop-shadow-md text-shadow-sm">Contact</a>
     </div>
 
     <!-- Mobile Menu Button -->
-    <button id="menu-toggle" class="md:hidden text-gray-600 hover:text-gray-800 focus:outline-none">
+    <button id="menu-toggle" class="md:hidden text-white hover:text-gray-200 focus:outline-none">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
       </svg>
@@ -19,10 +19,10 @@
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden bg-gray-100">
-    <a href="/" class="block px-4 py-2 text-gray-600 hover:text-gray-800">Home</a>
-    <a href="/about.html" class="block px-4 py-2 text-gray-600 hover:text-gray-800">About</a>
-    <a href="/contact.html" class="block px-4 py-2 text-gray-600 hover:text-gray-800">Contact</a>
+  <div id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-70 backdrop-blur-sm">
+    <a href="/" class="block px-4 py-2 text-white hover:text-gray-200 font-semibold text-shadow-sm">Home</a>
+    <a href="/about.html" class="block px-4 py-2 text-white hover:text-gray-200 font-semibold text-shadow-sm">About</a>
+    <a href="/contact.html" class="block px-4 py-2 text-white hover:text-gray-200 font-semibold text-shadow-sm">Contact</a>
   </div>
 </nav>
 
@@ -31,7 +31,27 @@
   const navbar = document.getElementById('navbar');
   let lastScrollY = window.scrollY;
 
+  // Add CSS for text shadow
+  const style = document.createElement('style');
+  style.textContent = `
+    .text-shadow-sm {
+      text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    }
+    .text-shadow-md {
+      text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    }
+  `;
+  document.head.appendChild(style);
+
   window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+      // Add background when scrolled down
+      navbar.classList.add('bg-black', 'bg-opacity-70');
+    } else {
+      // Remove background when at top
+      navbar.classList.remove('bg-black', 'bg-opacity-70');
+    }
+
     if (window.scrollY > lastScrollY) {
       // Hide navbar when scrolling down
       navbar.style.transform = 'translateY(-100%)';
