@@ -103,16 +103,18 @@
 </div>
 <script>
  document.addEventListener('DOMContentLoaded', () => {
-    const contactBtn = document.getElementById('contact-btn');
+    const contactBtn = document.querySelectorAll('.contact-btn');
     const inquiryModal = document.getElementById('inquiry-modal');
     const closeModal = document.getElementById('close-modal');
     const inquiryForm = document.getElementById('inquiry-form');
 
-    // Open modal when contact button is clicked
-    contactBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      inquiryModal.classList.remove('hidden');
-      document.body.style.overflow = 'hidden';
+    // Open modal when contact buttons are clicked
+    contactBtn.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        inquiryModal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      });
     });
 
     // Close modal when close button is clicked
