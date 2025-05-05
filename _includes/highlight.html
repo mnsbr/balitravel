@@ -1,40 +1,54 @@
-<section class="py-12 bg-[#f2efe6] text-gray-800 min-h-screen flex items-center justify-center" data-aos="fade-up">
-  <div class="container mx-auto px-6 max-w-6xl">
-    <!-- Content Container -->
-    <div class="flex flex-col md:flex-row gap-8">
-      <!-- Introductory Text (Left Side) -->
-      <div class="w-full md:w-1/2 flex flex-col justify-center">
-        <h2 class="text-3xl font-bold text-gray-800 font-lora">Hal-hal yang bisa dilihat di Bali 🌴✨</h2>
-        <p class="text-gray-600 mt-4">Yuk, intip beberapa tempat seru yang wajib kamu kunjungi saat liburan di Bali!</p>
-        <p class="text-gray-600 mt-2">Pulau Bali terkenal dengan budaya yang kaya, tradisi Hindu yang kental, dan keindahan alamnya yang memukau. Masyarakat Bali menjaga warisan budaya mereka melalui upacara adat, tarian tradisional, dan seni ukir yang menakjubkan.</p>
-        <p class="text-gray-600 mt-2">Jangan lewatkan kesempatan menikmati keramahan penduduk lokal, mencicipi makanan khas seperti babi guling dan lawar, serta mengunjungi pura-pura suci yang tersebar di seluruh pulau.</p>
-        <p class="text-gray-600 mt-2">Bali juga dikenal sebagai "Pulau Dewata" karena kuil-kuil megahnya dan upacara keagamaan yang spektakuler. Setiap desa memiliki pura sendiri dan perayaan tahunan yang unik, menciptakan suasana magis yang tidak bisa ditemukan di tempat lain.</p>
-        <p class="text-gray-600 mt-2">Pantai-pantai eksotis seperti Kuta, Sanur, dan Nusa Dua menawarkan pemandangan matahari terbenam yang menakjubkan. Sementara daerah pedalaman seperti Ubud memanjakan mata dengan hamparan sawah bertingkat yang hijau membentang luas.</p>
-        <p class="text-gray-600 mt-2">Pengalaman berbelanja di pasar tradisional, mengikuti kelas memasak makanan Bali, atau sekadar bersantai di villa pribadi dengan pemandangan samudra adalah aktivitas yang tak boleh dilewatkan selama kunjungan Anda.</p>
-      </div>
-
-      <!-- Images (Right Side) -->
-      <div class="w-full md:w-1/2 grid grid-cols-2 gap-4">
-        <!-- Buah Image -->
-        <div class=" overflow-hidden">
-          <img src="assets/images/highlight/buah.avif" alt="Balinese Fruits" class="w-full aspect-square object-cover">
-        </div>
-
-        <!-- Ricefield Image -->
-        <div class="overflow-hidden">
-          <img src="assets/images/highlight/ricefield.avif" alt="Rice Fields in Bali" class="w-full aspect-square object-cover">
-        </div>
-
-        <!-- Sunset Image -->
-        <div class="overflow-hidden">
-          <img src="assets/images/highlight/sunset.avif" alt="Sunset in Bali" class="w-full aspect-square object-cover">
-        </div>
-
-        <!-- Temple Image -->
-        <div class="overflow-hidden">
-          <img src="assets/images/highlight/temple.avif" alt="Temple in Bali" class="w-full aspect-square object-cover">
-        </div>
-      </div>
+<section class="py-16 bg-[#f2efe6] text-gray-800 relative overflow-hidden">
+    <!-- Decorative palm overlay -->
+    <div class="absolute top-0 left-0 h-full w-1/3 opacity-10 pointer-events-none">
+        <img src="assets/images/palm-overlay.png" alt="" class="h-full object-cover">
     </div>
-  </div>
+
+    <div class="container mx-auto px-6 max-w-6xl relative z-10">
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
+            <!-- Text Content (Left) -->
+            <div class="w-full md:w-1/2">
+                <h3 class="text-xl font-semibold text-[#3d7a41] mb-2">Kami yang Terbaik</h3>
+                <h2 class="text-5xl font-bold text-gray-800 mb-6 font-display italic">Tentang Kami</h2>
+
+                <p class="text-gray-700 mb-6">
+                    Tur kami menawarkan berbagai tujuan yang memenuhi beragam minat wisatawan. Mulai dari pantai berpasir yang dibasuh matahari dengan lautan biru yang jernih, hingga pemandangan pegunungan yang menakjubkan, danau yang tenang, dan hutan yang rimbun, kami siap melayani Anda.
+                </p>
+
+                <p class="text-gray-700 mb-8">
+                    Jangan sia-siakan kesempatan ini! Kami memiliki penawaran menarik: 50 orang pertama yang mendaftar untuk tur akan menerima diskon 15% untuk pembelian dari mitra kami.
+                </p>
+
+                <a href="#" class="inline-block border-2 border-[#3d7a41] text-[#3d7a41] hover:bg-[#3d7a41] hover:text-white px-8 py-3 rounded-md font-semibold transition-all duration-300">
+                    Pesan Tur Sekarang
+                </a>
+            </div>
+
+            <!-- Images Stack (Right) -->
+            <div class="w-full md:w-1/2 relative h-[500px]">
+                <!-- Image 1 (back) -->
+                <div class="absolute right-0 top-0 w-3/4 h-80 rounded-2xl overflow-hidden shadow-xl" style="z-index: 1;">
+                    <img src="assets/images/highlight/temple.avif" alt="Pura di Bali" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Image 2 (middle) -->
+                <div class="absolute right-28 top-10 w-3/4 h-80 rounded-2xl overflow-hidden shadow-xl" style="z-index: 2;">
+                    <img src="assets/images/highlight/sunset.avif" alt="Matahari terbenam di Bali" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Image 3 (front) -->
+                <div class="absolute right-14 top-36 w-3/4 h-80 rounded-2xl overflow-hidden shadow-xl" style="z-index: 3;">
+                    <img src="assets/images/highlight/ricefield.avif" alt="Sawah di Bali" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Decorative map icon -->
+    <div class="absolute bottom-10 right-10 opacity-10 pointer-events-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+    </div>
 </section>
