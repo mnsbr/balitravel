@@ -1,0 +1,153 @@
+<section class="py-16 bg-white" data-aos="fade-up">
+  <div class="container mx-auto px-6 max-w-6xl">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-800 font-lora">Destinasi Populer di Bali</h2>
+      <p class="text-gray-600 mt-4 max-w-3xl mx-auto">Jelajahi tempat-tempat menakjubkan yang dapat Anda kunjungi selama perjalanan Anda</p>
+    </div>
+
+    <!-- Destination Navigation Buttons -->
+    <div class="flex flex-wrap justify-center gap-3 mb-10">
+      <button class="destination-btn px-6 py-2 rounded-full bg-[#e6b97a] text-white font-medium hover:bg-[#d4a76c] transition-colors active" data-destination="ubud">Ubud</button>
+      <button class="destination-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 transition-colors" data-destination="denpasar">Denpasar</button>
+      <button class="destination-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 transition-colors" data-destination="sanur">Sanur</button>
+      <button class="destination-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 transition-colors" data-destination="kuta">Kuta</button>
+      <button class="destination-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 transition-colors" data-destination="uluwatu">Uluwatu</button>
+    </div>
+
+    <!-- Destination Content Containers -->
+    <div class="destination-content-wrapper">
+      <!-- Ubud Content -->
+      <div class="destination-content flex flex-col md:flex-row gap-8 active" id="ubud-content">
+        <div class="w-full md:w-1/2">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Ubud: Pusat Budaya & Seni Bali</h3>
+          <p class="text-gray-600 mb-4">Ubud merupakan jantung budaya dan seni di Bali, terletak di tengah pedalaman pulau di antara sawah bertingkat dan hutan hujan yang lebat. Dikenal sebagai pusat kesenian dan kerajinan Bali, Ubud menawarkan pengalaman yang menenangkan jauh dari keramaian pantai.</p>
+          <p class="text-gray-600 mb-4">Di Ubud, Anda dapat mengunjungi galeri seni lokal, menyaksikan pertunjukan tari tradisional, mengikuti kelas yoga, atau sekadar berjalan-jalan di Monkey Forest yang terkenal. Kawasan ini juga dikenal dengan sawahnya yang menakjubkan, terutama di Tegallalang.</p>
+          <div class="flex flex-wrap gap-4 mt-6">
+            <span class="px-4 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Seni & Budaya</span>
+            <span class="px-4 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Alam & Hutan</span>
+            <span class="px-4 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Monkey Forest</span>
+            <span class="px-4 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Sawah Bertingkat</span>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2">
+          <!-- Placeholder image for Ubud -->
+          <div class="h-96 bg-gray-200 rounded-lg flex items-center justify-center">
+            <p class="text-gray-500">Gambar Ubud</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Denpasar Content -->
+      <div class="destination-content flex flex-col md:flex-row gap-8 hidden" id="denpasar-content">
+        <div class="w-full md:w-1/2">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Denpasar: Ibu Kota Bali yang Dinamis</h3>
+          <p class="text-gray-600 mb-4">Denpasar adalah ibu kota dan kota terbesar di Bali, menawarkan perpaduan unik antara kehidupan modern dan tradisi Bali. Sebagai pusat pemerintahan dan bisnis, kota ini berdenyut dengan aktivitas sepanjang hari.</p>
+          <p class="text-gray-600 mb-4">Kunjungi Pasar Badung untuk merasakan suasana pasar tradisional yang ramai, atau lihat koleksi seni dan artefak sejarah di Museum Bali. Jangan lewatkan Monumen Bajra Sandhi yang mengesankan, yang mengenang perjuangan rakyat Bali untuk kemerdekaan.</p>
+          <div class="flex flex-wrap gap-4 mt-6">
+            <span class="px-4 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Kota & Kehidupan Urban</span>
+            <span class="px-4 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Pasar Tradisional</span>
+            <span class="px-4 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Museum</span>
+            <span class="px-4 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Monumen Sejarah</span>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2">
+          <!-- Placeholder image for Denpasar -->
+          <div class="h-96 bg-gray-200 rounded-lg flex items-center justify-center">
+            <p class="text-gray-500">Gambar Denpasar</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sanur Content -->
+      <div class="destination-content flex flex-col md:flex-row gap-8 hidden" id="sanur-content">
+        <div class="w-full md:w-1/2">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Sanur: Pantai Tenang dengan Pesona Klasik</h3>
+          <p class="text-gray-600 mb-4">Sanur adalah kawasan pantai yang tenang dan lebih santai di timur Bali, sempurna bagi mereka yang mencari suasana yang lebih damai dibandingkan dengan area wisata lainnya. Dengan pantai berpasir putih yang landai dan perairan yang tenang, Sanur cocok untuk keluarga dan wisatawan yang lebih dewasa.</p>
+          <p class="text-gray-600 mb-4">Nikmati matahari terbit yang spektakuler, jelajahi jalur pantai sepanjang 5 km yang diperkeras, atau berlayar dengan perahu tradisional. Sanur juga memiliki beragam restoran, kafe, dan butik yang menarik untuk dijelajahi.</p>
+          <div class="flex flex-wrap gap-4 mt-6">
+            <span class="px-4 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Pantai Tenang</span>
+            <span class="px-4 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Sunrise View</span>
+            <span class="px-4 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Olahraga Air</span>
+            <span class="px-4 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Jalur Bersepeda</span>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2">
+          <!-- Placeholder image for Sanur -->
+          <div class="h-96 bg-gray-200 rounded-lg flex items-center justify-center">
+            <p class="text-gray-500">Gambar Sanur</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kuta Content -->
+      <div class="destination-content flex flex-col md:flex-row gap-8 hidden" id="kuta-content">
+        <div class="w-full md:w-1/2">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Kuta: Surga Peselancar & Kehidupan Malam</h3>
+          <p class="text-gray-600 mb-4">Kuta adalah salah satu daerah wisata paling terkenal di Bali, dengan pantai berpasir panjang yang ideal untuk berselancar dan menikmati matahari terbenam yang menakjubkan. Area ini terkenal dengan kehidupan malam yang ramai, berbagai pilihan belanja, dan suasana liburan yang semarak.</p>
+          <p class="text-gray-600 mb-4">Bagi pemula dalam berselancar, Kuta menawarkan kondisi ombak yang sempurna dan banyak sekolah selancar. Setelah matahari terbenam, jelajahi berbagai klub malam yang ramai, restoran internasional, dan pasar tradisional di sepanjang Jalan Legian.</p>
+          <div class="flex flex-wrap gap-4 mt-6">
+            <span class="px-4 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Surfing</span>
+            <span class="px-4 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Sunset Beach</span>
+            <span class="px-4 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Nightlife</span>
+            <span class="px-4 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Shopping</span>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2">
+          <!-- Placeholder image for Kuta -->
+          <div class="h-96 bg-gray-200 rounded-lg flex items-center justify-center">
+            <p class="text-gray-500">Gambar Kuta</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Uluwatu Content -->
+      <div class="destination-content flex flex-col md:flex-row gap-8 hidden" id="uluwatu-content">
+        <div class="w-full md:w-1/2">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Uluwatu: Tebing Spektakuler & Pura Kuno</h3>
+          <p class="text-gray-600 mb-4">Terletak di ujung selatan semenanjung Bukit di Bali, Uluwatu terkenal dengan tebing kapur yang spektakuler dan salah satu pura paling suci di Bali, Pura Luhur Uluwatu. Kawasan ini menawarkan pemandangan laut yang menakjubkan dan beberapa pantai tersembunyi yang indah.</p>
+          <p class="text-gray-600 mb-4">Saksikan pertunjukan tari Kecak tradisional saat matahari terbenam di Pura Uluwatu, atau nikmati ombak kelas dunia di beberapa titik selancar terbaik di Bali seperti Padang Padang, Bingin, dan Dreamland. Uluwatu juga menjadi rumah bagi resor mewah dan beach club eksklusif.</p>
+          <div class="flex flex-wrap gap-4 mt-6">
+            <span class="px-4 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Pura & Candi</span>
+            <span class="px-4 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Tebing Dramatis</span>
+            <span class="px-4 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Tari Kecak</span>
+            <span class="px-4 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Surfing Pro</span>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2">
+          <!-- Placeholder image for Uluwatu -->
+          <div class="h-96 bg-gray-200 rounded-lg flex items-center justify-center">
+            <p class="text-gray-500">Gambar Uluwatu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript for Destination Navigation -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const destinationButtons = document.querySelectorAll('.destination-btn');
+      const destinationContents = document.querySelectorAll('.destination-content');
+
+      destinationButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const destination = button.getAttribute('data-destination');
+
+          // Update active button
+          destinationButtons.forEach(btn => {
+            btn.classList.remove('active', 'bg-[#e6b97a]', 'text-white');
+            btn.classList.add('bg-gray-200', 'text-gray-700');
+          });
+          button.classList.add('active', 'bg-[#e6b97a]', 'text-white');
+          button.classList.remove('bg-gray-200', 'text-gray-700');
+
+          // Show relevant content
+          destinationContents.forEach(content => {
+            content.classList.add('hidden');
+          });
+          document.getElementById(`${destination}-content`).classList.remove('hidden');
+        });
+      });
+    });
+  </script>
+</section>

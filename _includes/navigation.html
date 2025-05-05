@@ -1,17 +1,21 @@
 <nav id="navbar" class="bg-transparent p-4 fixed w-full top-0 z-50 transition-all duration-300">
-  <div class="container mx-auto flex justify-between items-center">
-    <!-- Logo -->
-    <a href="/" class="text-white text-xl font-bold font-lora drop-shadow-lg text-shadow-md">Bali Moments</a>
-
-    <!-- Navigation Links -->
-    <div class="hidden md:flex space-x-6">
+  <div class="container mx-auto flex justify-center items-center">
+    <!-- Left Navigation Links -->
+    <div class="hidden md:flex space-x-3 mr-6">
       <a href="/" class="text-white hover:text-gray-200 transition-colors font-semibold drop-shadow-md text-shadow-sm">Home</a>
       <a href="/about.html" class="text-white hover:text-gray-200 transition-colors font-semibold drop-shadow-md text-shadow-sm">About</a>
+    </div>
+
+    <!-- Centered Logo -->
+    <a href="/" class="text-white text-xl font-bold font-lora drop-shadow-lg text-shadow-md mx-4">Bali Moments</a>
+
+    <!-- Right Navigation Link -->
+    <div class="hidden md:flex space-x-3 ml-6">
       <a href="/contact.html" class="text-white hover:text-gray-200 transition-colors font-semibold drop-shadow-md text-shadow-sm">Contact</a>
     </div>
 
     <!-- Mobile Menu Button -->
-    <button id="menu-toggle" class="md:hidden text-white hover:text-gray-200 focus:outline-none">
+    <button id="menu-toggle" class="md:hidden absolute right-4 text-white hover:text-gray-200 focus:outline-none">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
       </svg>
