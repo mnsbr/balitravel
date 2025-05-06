@@ -59,8 +59,8 @@
     if (window.scrollY > lastScrollY) {
       // Hide navbar when scrolling down
       navbar.style.transform = 'translateY(-100%)';
-    } else {
-      // Show navbar when scrolling up
+    } else if (window.scrollY === 0) {
+      // Show navbar only when at the very top
       navbar.style.transform = 'translateY(0)';
     }
     lastScrollY = window.scrollY;
