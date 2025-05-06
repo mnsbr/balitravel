@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
+    <title>Bali Moments</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Add Google Fonts for Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
@@ -55,6 +55,12 @@
             // Initial state with higher opacity
             document.querySelectorAll('#social-icons a').forEach(icon => {
                 icon.classList.add('bg-opacity-60');
+            });
+
+            // Add aria-label attributes to the social media links
+            document.querySelectorAll('#social-icons a').forEach((icon, index) => {
+                const labels = ['Facebook', 'Twitter', 'Instagram'];
+                icon.setAttribute('aria-label', labels[index]);
             });
         });
     </script>
