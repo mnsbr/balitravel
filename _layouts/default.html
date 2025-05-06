@@ -21,26 +21,5 @@
     {% include scroll-to-top-button.html %}
     {% include footer.html %}
     {{ content }}
-
-
-
-    <script>
-        // Social Icons visibility adjustment based on scroll position
-        document.addEventListener('DOMContentLoaded', () => {
-            // Keep social icons visible against any background
-            const socialIcons = document.getElementById('social-icons');
-
-            // Initial state with higher opacity
-            document.querySelectorAll('#social-icons a').forEach(icon => {
-                icon.classList.add('bg-opacity-60');
-            });
-
-            // Add aria-label attributes to the social media links
-            document.querySelectorAll('#social-icons a').forEach((icon, index) => {
-                const labels = ['Facebook', 'Twitter', 'Instagram'];
-                icon.setAttribute('aria-label', labels[index]);
-            });
-        });
-    </script>
 </body>
 </html>
