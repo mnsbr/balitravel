@@ -5,22 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bali Moments</title>
     <meta name="description" content="Temukan cara terbaik untuk menjelajahi Bali dengan anggaran terbatas. Tips perjalanan hemat, destinasi menarik, dan pengalaman tak terlupakan di Pulau Dewata.">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/tailwind.css">
     <!-- Add Google Fonts for Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Source Sans Pro', 'sans-serif'], // Set Source Sans Pro as the default font
-                        lora: ['Lora', 'serif'], // Add Lora font
-                    },
-                },
-            },
-        };
-    </script>
 </head>
 <body class="font-sans">
     {% include navigation.html %}
@@ -37,17 +25,6 @@
 
 
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Source Sans Pro', 'sans-serif'], // Set Source Sans Pro as the default font
-                        lora: ['Lora', 'serif'], // Add Lora font
-                    },
-                },
-            },
-        };
-
         // Social Icons visibility adjustment based on scroll position
         document.addEventListener('DOMContentLoaded', () => {
             // Keep social icons visible against any background
